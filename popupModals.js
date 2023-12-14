@@ -1,32 +1,32 @@
 const popup = document.querySelector(".popup");
 const popupMessage = document.querySelector(".message");
-export function addToWishlistSuccess(movieName) {
+function addToWishlistSuccess(movieName) {
   // code to open the modal of successfully added movie to wishlist
   const htmlText = `Succesfully added ${movieName} to wishlist!`;
   popupMessage.innerHTML = htmlText;
   popup.className = "popup addedpopup";
 }
 
-export function addToLibrarySuccess(movieName) {
+function addToLibrarySuccess(movieName) {
   // code to open the modal of successfully added movie to library
   const htmlText = `Succesfully added ${movieName} to library!`;
   popupMessage.innerHTML = htmlText;
   popup.className = "popup addedpopup";
 }
 
-export function removedFromWishlist(movieName) {
+function removedFromWishlist(movieName) {
   // code to open the modal of successfully removed movie from wishlist
   const htmlText = `Succesfully removed ${movieName} from wishlist!`;
   popupMessage.innerHTML = htmlText;
   popup.className = "popup removedpopup";
 }
 
-export function removedFromLibrary(movieName) {
+function removedFromLibrary(movieName) {
   // code to open the modal of successfully removed movie from library
   const htmlText = `Succesfully removed ${movieName} from library!`;
   popupMessage.innerHTML = htmlText;
   popup.className = "popup removedpopup";
 }
-export function closePopup() {
+function closePopup() {
   popup.className = "popup";
 }
