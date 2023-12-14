@@ -167,11 +167,11 @@ let pressSearch = async (pageNumer) => {
               movieObject.movieID
             }
             );">
-            <img src="/Assets/heart.png" alt="wishlist"></button>
+            <img src="https://github.com/supercloser/my-cinema/blob/main/Assets/heart.png?raw=true" alt="wishlist"></button>
             <button class="library" title="Add to watched shelf" onclick="addToLibrary(${
               movieObject.movieID
             }
-            );"><img src="/Assets/library.png" alt="add to library" class="library-image"></button>
+            );"><img src="https://github.com/supercloser/my-cinema/blob/main/Assets/library.png?raw=true" alt="add to library" class="library-image"></button>
             <img class="poster" onclick="getMovieData(${
               movieObject.movieID
             });" src="${

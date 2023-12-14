@@ -33,7 +33,7 @@ function displayMovies(movies) {
             <p class="year">${movieObject.year}</p>
             <button class="wishlist" title="Remove from wishlist" onclick="removeFromWishlist(${
               movieObject.movieID
-            });"><img src="/Assets/broken_heart.png" alt="wishlist" class="broken-heart"></button>
+            });"><img src="https://github.com/supercloser/my-cinema/blob/main/Assets/broken_heart.png?raw=true" alt="wishlist" class="broken-heart"></button>
             <img class="poster"  onclick="getMovieData(${
               movieObject.movieID
             });" src="${
