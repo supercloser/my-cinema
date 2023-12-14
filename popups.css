@@ -1,0 +1,33 @@
+.popup {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 50px;
+  bottom: 10px;
+  right: 20px;
+  position: fixed;
+  border-radius: 12px;
+  padding: 10px 10px;
+  justify-items: center;
+  align-items: center;
+  font-weight: bolder;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.addedpopup {
+  color: rgb(236, 250, 216);
+  border: 1px solid rgb(236, 250, 216);
+  opacity: 1;
+}
+.removedpopup {
+  color: rgb(250, 216, 229);
+  border: 1px solid rgb(250, 216, 229);
+  opacity: 1;
+}
+.x-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  top: 2px;
+  right: 5px;
+  cursor: pointer;
+}

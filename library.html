@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/e4afa1b718.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My cinema - wishlist</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="popups.css" />
+    <link rel="stylesheet" href="movieInfo.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a class="header-button" href="index.html">Home page</a>
+      <a class="header-button" href="wishlist.html">My wishlist</a>
+      <a class="header-button active-page" href="library.html">My watched library</a>
+    </div>
+    <div class="popup">
+        <button class="x-btn" onclick="closePopup();">X</button>
+        <p class="message"></p>
+      </div>
+      <div class="movie-info-container"></div>
+    <div class="searchBox">
+      <h1 class="logo">Here are saved all of the movies you already saw!</h1>
+      <div class="results"></div>
+      <script src="library.js"></script>
+      <script src="popupModals.js"></script>
+  </body>
+</html>

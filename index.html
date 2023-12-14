@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="searchbox.js"></script>
+    <script defer src="popupModals.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e4afa1b718.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My cinema</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="popups.css" />
+    <link rel="stylesheet" href="movieInfo.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <a class="header-button active-page" href="index.html">Home page</a>
+      <a class="header-button" href="wishlist.html">My wishlist</a>
+      <a class="header-button" href="library.html">My watched library</a>
+    </div>
+    <div class="popup">
+      <button class="x-btn" onclick="closePopup();">X</button>
+      <p class="message"></p>
+    </div>
+    <div class="movie-info-container"></div>
+    <div class="searchBox">
+      <h1 class="logo">My Cinema</h1>
+      <div class="searchBar">
+        <input
+          type="text"
+          class="inputBox"
+          autocomplete="off"
+          placeholder="Search for a movie or series..."
+        />
+        <button class="searchButton" onclick="pressSearch(0);">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <h3 class="number-of-results"></h3>
+    </div>
+    <div class="arrows">
+      <button class="arrow left-arrow" onclick="prevPage();">
+        <img src="Assets/back.png" alt="left-arrow" class="arrow-image" />
+      </button>
+      <!-- left arrow -->
+      <div class="results"></div>
+      <!-- right arrow -->
+      <button class="arrow right-arrow" onclick="nextPage();">
+        <img src="Assets/next.png" alt="right-arrow" class="arrow-image" />
+      </button>
+    </div>
+  </body>
+</html>

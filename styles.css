@@ -1,0 +1,170 @@
+body {
+  background-color: rgb(75, 75, 75);
+  color: white;
+  font-family: Arial;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: end;
+  align-items: center;
+  background-color: white;
+  box-shadow: 1px 2px 5px black;
+}
+.header-button {
+  color: rgb(75, 75, 75);
+  padding: 10px 8px;
+  border: none;
+  border-radius: 12px;
+  margin-right: 10px;
+  font-weight: bolder;
+  transition: background-color, box-shadow 150ms linear;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header-button:hover {
+  /* background-color: rgb(238, 238, 238); */
+  box-shadow: 0px 1px 5px black;
+}
+.active-page {
+  /* background-color: rgb(238, 238, 238); */
+  box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.15);
+}
+.logo {
+  text-align: center;
+  margin-top: 200px;
+  background: -webkit-linear-gradient(rgb(253, 255, 233), rgb(123, 123, 123));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.searchBox {
+  padding: 0 0 0 0;
+  margin: 200px auto;
+  width: 600px;
+  background-color: transparent;
+}
+.searchBar {
+  padding: 0 0 0 0;
+  width: 600px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px black;
+}
+.inputBox {
+  margin: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 520px;
+  height: 40px;
+  font-size: 16px;
+  font-family: Arial;
+  border: none;
+  outline: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(75, 75, 75);
+  border-radius: 50px;
+}
+.searchButton {
+  background-color: transparent;
+  height: 45px;
+  padding: auto auto;
+  width: auto;
+  cursor: pointer;
+  border: none;
+}
+button .fa-solid {
+  height: 25px;
+  width: auto;
+  font-size: 25px;
+}
+.arrows {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+.arrow,
+.right-arrow,
+.left-arrow {
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+.right-arrow {
+  display: none;
+}
+.left-arrow {
+  display: none;
+}
+.arrow-image:hover {
+  cursor: pointer;
+}
+.results {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+  grid-gap: 20px;
+}
+.result {
+  background-color: rgb(101, 101, 101);
+  width: 280px;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px black;
+  justify-content: center;
+}
+.year {
+  font-family: Arial;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-top: 15px;
+  text-shadow: 1px 3px 5px black;
+}
+.poster {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 300px;
+  width: 220px;
+  box-shadow: 1px 3px 5px black;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+  align-content: center;
+}
+.movieName {
+  font-family: Arial;
+  font-weight: 400;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  text-shadow: 1px 3px 5px black;
+}
+.number-of-results {
+  font-family: Arial;
+  font-weight: 400;
+  text-shadow: 1px 3px 5px black;
+  padding-left: 15px;
+}
+.wishlist {
+  padding-left: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.library {
+  padding-left: 0px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.library-image,
+.broken-heart,
+.remove-book {
+  height: 24px;
+  width: 24px;
+}
